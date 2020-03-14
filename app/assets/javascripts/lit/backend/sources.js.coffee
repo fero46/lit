@@ -2,7 +2,7 @@ $ ->
   sourceId = $('#source_id').attr('value')
 
   updateFunc = ->
-    $.ajax "/lit/sources/" + sourceId + "/sync_complete",
+    $.ajax "/translation/sources/" + sourceId + "/sync_complete",
       type: 'GET'
       format: 'json'
       success: (xml, textStatus, xhr) ->
